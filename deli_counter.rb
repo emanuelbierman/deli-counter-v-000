@@ -10,7 +10,11 @@ def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
   else
-    puts "The line is currently: 1. Logan 2. Avi 3. Spencer"
+    line_array = []
+    katz_deli.each_with_index do |element, index|
+      line_array << katz_deli[index]
+    end
+    puts "The line is currently: #{names.join}"
   end
 end
 
