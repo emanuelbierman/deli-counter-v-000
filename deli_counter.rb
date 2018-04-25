@@ -7,10 +7,10 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
-  line_array = []
   if katz_deli.size == 0
     puts "The line is currently empty."
   else
+    line_array = []
     katz_deli.each_with_index do |element, index|
       line_array << katz_deli[index]
     end
