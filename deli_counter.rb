@@ -12,7 +12,7 @@ def line(katz_deli)
   else
     line_array = []
     katz_deli.each_with_index do |element, index|
-      line_array << katz_deli[index].insert
+      line_array << katz_deli[index].insert(0,"#{katz_deli[index]}. ")
     end
     puts "The line is currently: #{line_array.join}"
   end
