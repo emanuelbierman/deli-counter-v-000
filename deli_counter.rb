@@ -14,7 +14,7 @@ def line(katz_deli)
     katz_deli.each_with_index do |element, index|
       line_array << katz_deli[index]
     end
-    puts "The line is currently: #{names.join}"
+    puts "The line is currently: #{line_array.join}"
   end
 end
 
